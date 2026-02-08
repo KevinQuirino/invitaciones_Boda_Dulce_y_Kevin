@@ -26,8 +26,8 @@ h2,
 /* --- HERO SECTION (Portada) --- */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(255, 251, 224, 0.7), rgba(229, 213, 204, 0.7)), url('../assets/picture/foto.jpeg');
-    /* Imagen genérica de boda de fondo */
+    /* Agregamos ../ para salir de la carpeta css */
+    background: linear-gradient(rgba(255, 251, 224, 0.7), rgba(229, 213, 204, 0.7)), url('../picture/foto.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
