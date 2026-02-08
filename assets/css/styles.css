@@ -1,0 +1,418 @@
+/* --- CONFIGURACIÓN DE COLORES --- */
+:root {
+    --rose-dark: #6c201f;
+    --rose-dusty: #ad4658;
+    --pink-grey: #c8858e;
+    --cream: #d2b6b4;
+    --off-white: #e2b168;
+    --bg-light: #fdfaf7;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--off-white);
+    color: #5a5a5a;
+    overflow-x: hidden;
+}
+
+/* Tipografía Cursiva para Títulos */
+h1,
+h2,
+.cursive-font {
+    font-family: 'Great Vibes', cursive;
+    color: var(--rose-dark);
+}
+
+/* --- HERO SECTION (Portada) --- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 251, 224, 0.7), rgba(229, 213, 204, 0.7)), url('/assets/picture/foto.jpeg');
+    /* Imagen genérica de boda de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--rose-dark);
+}
+
+/* --- SECCIONES GENERALES --- */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- PADRES --- */
+.parents-section {
+    background-color: var(--cream);
+}
+
+.parents-names h4 {
+    color: var(--rose-dusty);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.parents-names p {
+    font-size: 1.9rem;
+    font-family: 'Great Vibes', cursive;
+    color: #555;
+}
+
+.divider {
+    color: var(--rose-dark);
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* --- EVENTO (Tarjetas) --- */
+.event-card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--rose-dusty);
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-box {
+    font-size: 3rem;
+    color: var(--rose-dark);
+    margin-bottom: 20px;
+}
+
+/* --- CUENTA REGRESIVA --- */
+.countdown-section {
+    background-color: var(--pink-grey);
+    color: white;
+    text-align: center;
+}
+
+.countdown-item {
+    display: inline-block;
+    margin: 10px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    color: var(--rose-dark);
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #555;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--rose-dark);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Ajustes Móviles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .countdown-item {
+        margin: 10px 5px;
+        min-width: 70px;
+        padding: 10px;
+    }
+
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- ESTILOS PARA FOTOS VERTICALES --- */
+.gallery-card {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--cream);
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery-card {
+        max-width: 100%;
+    }
+
+    .carousel-item {
+        height: 550px;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.fa-spin {
+    animation: fa-spin 5s infinite linear;
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --- ESTILOS PADRINOS --- */
+.padrinos-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.padrinos-box {
+    border: 1px solid var(--cream);
+    padding: 40px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    min-width: 300px;
+    background-color: #fdfaf7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.padrinos-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    /* Tamaño similar a los nombres de los padres */
+    color: var(--rose-dark);
+    margin-bottom: 5px;
+}
+
+/* Esto asegura que el título use la tipografía global de tu código */
+.padrinos-section .section-title {
+    margin-bottom: 30px;
+    /* Ya hereda Great Vibes de tu configuración general */
+}
+
+/* --- ESTILOS PADRINOS --- */
+.padrinos-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.padrinos-box {
+    border: 1px solid var(--cream);
+    padding: 40px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    min-width: 300px;
+    background-color: #fdfaf7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    position: relative;
+    /* Muy importante para posicionar los íconos dentro */
+    padding-left: 70px;
+    /* Espacio para los íconos de la izquierda */
+    padding-right: 70px;
+    /* Espacio para los íconos de la derecha */
+}
+
+.padrinos-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: var(--rose-dark);
+    margin-bottom: 5px;
+}
+
+/* Estilos para los íconos decorativos */
+.padrino-icon-left,
+.padrino-icon-right {
+    position: absolute;
+    color: var(--rose-dusty);
+    /* Color rosa fuerte de tu paleta */
+    font-size: 2.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.padrino-icon-left {
+    left: 20px;
+    /* Posición desde la izquierda */
+}
+
+.padrino-icon-right {
+    right: 20px;
+    /* Posición desde la derecha */
+}
+
+/* Ajustes para móviles para que los íconos no se salgan */
+@media (max-width: 768px) {
+    .padrinos-box {
+        padding-left: 20px;
+        /* Menos espacio en móvil */
+        padding-right: 20px;
+        /* Menos espacio en móvil */
+    }
+
+    .padrino-icon-left,
+    .padrino-icon-right {
+        font-size: 1.5rem;
+        /* Íconos más pequeños en móvil */
+        top: 15px;
+        /* Los subimos un poco */
+        transform: translateY(0);
+        /* Quitamos el centrado vertical para que se vea mejor */
+    }
+
+    .padrino-icon-left {
+        left: 10px;
+    }
+
+    .padrino-icon-right {
+        right: 10px;
+    }
+
+    .padrino-icon-right:last-child {
+        top: auto;
+        /* Para que el último icono esté más abajo */
+        bottom: 15px;
+    }
+}
+
+/* --- DISEÑO PREMIUM SECCIÓN PDF --- */
+.pdf-card {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 30px;
+    border: 1px solid var(--cream);
+    box-shadow: 0 15px 45px rgba(108, 32, 31, 0.08);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    color: var(--rose-dark);
+    font-size: 2.2rem;
+    border: 1px solid var(--cream);
+}
+
+.pdf-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--rose-dusty);
+    margin: 15px auto 20px;
+    opacity: 0.6;
+}
+
+.pdf-text {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-pdf-premium {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--rose-dark), var(--rose-dusty));
+    color: white !important;
+    padding: 16px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(108, 32, 31, 0.2);
+}
+
+.btn-pdf-premium:hover {
+    box-shadow: 0 15px 25px rgba(108, 32, 31, 0.3);
+    transform: scale(1.03);
+}
+
+.pdf-footer-note {
+    margin-top: 20px;
+    color: var(--cream);
+    font-style: italic;
+}
+
+@media (max-width: 576px) {
+    .pdf-card {
+        padding: 40px 20px;
+    }
+
+    .btn-pdf-premium {
+        padding: 14px 25px;
+        width: 100%;
+    }
+}
